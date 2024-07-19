@@ -1,0 +1,140 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(219, 225, 227);
+}
+
+.header{
+    width: 90%;
+    margin: auto;
+    
+}
+.navbar{
+    border: rgb(74, 89, 136);
+    background-color: rgb(95, 115, 175);
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+    align-items: center;
+}
+
+.list{
+    list-style-type: none;
+    
+}
+.list a{
+    color: rgb(253, 245, 245);
+    font-size: 25px ;
+}
+
+.list a:hover{
+    color: rgb(0, 0, 7);
+    
+}
+.section{
+    margin-top: 40px;
+    margin-inline: 95px;
+}
+.section p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: cursive;
+    font-size: 72px;
+}
+.homeimg{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 650px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.table caption{
+    font-size: 35px;
+}
+.table,tr,td{
+    font-size: 20px;
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+  /*  margin: auto;*/
+}
+
+th{
+    padding-left: 10px;
+    text-align: left;
+    font-size: 25px;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 20px;
+}
+
+#headings{
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.links a{
+    color: black;
+}
+
+.links a:hover{
+    color: blue;
+}
+.image img{
+    height: 45px;
+    width: auto;
+}
+
+.textarea{
+    background-color: rgb(220, 218, 218);
+    font-size: 18px;
+    margin: auto;
+    width: 80%;
+    height: 8pc;
+}
+form input{
+    margin-left: 1pc;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    cursor:pointer;
+    background-color: rgb(80, 97, 149);
+}
+form input:hover{
+    background-color: rgb(107, 107, 107);
+}
+
+.gallery{
+    display: grid;
+   /* grid-template-columns: auto auto auto;*/
+}
+
+.galitem img{
+    height: 300px;
+    width: 300px;
+}
+@media (min-width: 100px){
+    .gallery{
+        column-gap: 15px;
+        row-gap: 10px;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .table{
+        width: 100%;
+    }
+    tr,th,td{
+        width: 50%;
+        height: 50px;
+    }
+} 
